@@ -1,0 +1,108 @@
+@media (max-width: 900px) {
+    .text-container-last h2 {
+        font-size: 130px;
+    }
+}
+
+@media (max-width: 860px) {
+    footer .top-content {
+        flex-direction: column;
+    }
+
+    footer .top-content .right-container,
+    footer .top-content .left-container {
+        width: 100%;
+        border: none;
+        align-items: center;
+    }
+
+    footer .top-content .left-container {
+        padding: 34px 0;
+    }
+
+    footer .top-content .right-container {
+        padding: 34px 0;
+        border-top: 1px solid var(--footer-border);
+    }
+
+    footer .top-content .right-container .links {
+        width: 100%;
+        gap: 20px;
+        margin-bottom: 40px;
+        justify-content: space-evenly;
+    }
+
+    footer .top-content .left-container span,
+    footer .top-content .left-container h3 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 680px) {
+    .colors-container h2 {
+        font-size: 80px;
+    }
+
+    .text-container-last h2 {
+        font-size: 90px;
+    }
+}
+
+@media (max-width: 580px) {
+
+    .image-container-left .info-text-container h2,
+    .image-container-right .info-text-container h2,
+    .image-container-left-more .info-text-container h2 {
+        font-size: 36px;
+    }
+}
+
+
+@media (max-width: 471px) {
+    .header-nav ul {
+        width: 100%;
+    }
+
+    .header-nav ul:first-child {
+        margin: 0;
+    }
+
+    header .main-text {
+        font-size: 50px;
+    }
+
+    .colors-container h2 {
+        font-size: 90px;
+    }
+
+    .colors-container .color-sections {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 400px) {
+    .context-menu {
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 8px 8px 0 0;
+    }
+
+    header .main-text {
+        font-size: 40px;
+    }
+
+    .image-container-left .info-text-container h2,
+    .image-container-right .info-text-container h2,
+    .image-container-left-more .info-text-container h2 {
+        font-size: 28px;
+    }
+
+    .text-container-first p {
+        font-size: 32px;
+    }
+
+    .image-container-left-more .info-text-container a {
+        font-size: 16px;
+    }
+}
