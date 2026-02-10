@@ -48,7 +48,6 @@ body {
     width: 100%;
     padding-top: 13px;
     display: flex;
-    flex-wrap: nowrap;
 }
 
 .context-menu .cookies .button-container .button {
@@ -78,7 +77,7 @@ header {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    background: var(--header-image);
+    background: var(--header-image) fixed;
 }
 
 .header-nav {
@@ -135,9 +134,12 @@ header .main-text {
     background: var(--dark-button);
 }
 
-.dark-button:hover,
-.dark-button:active {
+.dark-button:hover {
     opacity: .9;
+}
+
+.dark-button:active {
+    opacity: 1;
 }
 
 .dark-button:focus-visible {
@@ -223,6 +225,10 @@ header .dark-button:focus-visible {
     flex-direction: column;
 }
 
+.colors-container .color-sections .color:hover>img {
+    transform: scale(1.05);
+}
+
 .colors-container .color-sections .color:focus-visible {
     outline: 1px solid var(--outline-black);
 }
@@ -230,6 +236,8 @@ header .dark-button:focus-visible {
 .colors-container .color-sections .color img {
     height: 165px;
     width: 165px;
+    overflow: hidden;
+    transition: transform .1s linear;
 }
 
 .colors-container .color-sections .color .text {
@@ -518,7 +526,7 @@ footer .top-content .left-container .email input {
     background: var(--none);
 }
 
-footer .top-content .left-container .email button {
+footer .top-content .left-container .email .go-button {
     height: 100%;
     padding: 0 12px;
     border-radius: 0 5px 5px 0;
@@ -528,8 +536,9 @@ footer .top-content .left-container .email button {
     background: var(--none);
 }
 
-footer .top-content .left-container .email button:hover,
-footer .top-content .left-container .email button:focus-visible {
+footer .top-content .left-container .email .go-button:hover,
+footer .top-content .left-container .email .go-button:active,
+footer .top-content .left-container .email .go-button:focus-visible {
     background: var(--email-button);
 }
 
